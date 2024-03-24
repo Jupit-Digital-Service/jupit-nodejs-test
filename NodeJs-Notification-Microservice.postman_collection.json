@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "3ec477a7-5645-4b32-bded-3363e2ca8ace",
+		"name": "NodeJs-Notification-Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18923899",
+		"_collection_link": "https://red-shuttle-74168.postman.co/workspace/Team-Workspace~8358c689-e984-4aee-8761-c542389475ab/collection/18923899-3ec477a7-5645-4b32-bded-3363e2ca8ace?action=share&source=collection_link&creator=18923899"
+	},
+	"item": [
+		{
+			"name": "send-email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Jackson",
+							"description": "name, name of recipient",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jakid30@gmail",
+							"description": "string, email of recipient",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/send-email",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"send-email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
